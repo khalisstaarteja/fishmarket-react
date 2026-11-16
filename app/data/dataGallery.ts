@@ -1,13 +1,5 @@
-// 1. TYPE IMPORT
-// Mengimpor tipe data GalleryItem dari komponen GalleryCard.
-// Tipe ini bertindak sebagai "cetak biru" atau kontrak yang memastikan 
-// setiap data di dalam array memiliki struktur yang seragam (harus ada id, type, src, dll).
 import type { GalleryItem } from '@/components/GalleryCard';
 
-// 2. MOCK DATA / DATA SOURCE
-// Memisahkan data dari komponen UI (Gallery.tsx) ke file tersendiri.
-// Praktik ini disebut "Separation of Concerns". Tujuannya agar kode UI lebih bersih,
-// mudah dibaca, dan jika ada perubahan/penambahan data, kita cukup mengedit file ini saja.
 export const galleryData: GalleryItem[] = [
   { 
     id: 1, 
@@ -47,7 +39,6 @@ export const galleryData: GalleryItem[] = [
   { 
     id: 6, 
     type: 'video', 
-    // Khusus untuk video, kita menggunakan link embed eksternal (YouTube)
     src: 'https://www.youtube-nocookie.com/embed/AB4BaF_Uc0s?autoplay=1&rel=0', 
     previewSrc: 'https://www.youtube-nocookie.com/embed/AB4BaF_Uc0s?autoplay=1&mute=1&loop=1&playlist=AB4BaF_Uc0s&controls=0&enablejsapi=1', 
     title: 'Video Suasana Pasar', 
@@ -118,5 +109,4 @@ export const galleryData: GalleryItem[] = [
   },
 ];
 
-// Mengekspor kembali tipe data agar file lain yang membutuhkan (jika ada) bisa menggunakannya
 export { GalleryItem };

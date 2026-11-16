@@ -10,7 +10,8 @@ import Title from "@/components/Title";
 import Button from "@/components/Button";
 import { getTransaksiList, Transaksi } from "@/lib/pesanan";
 import { getCurrentUser } from "@/lib/auth";
-import { getContent, getDefaultContent } from "@/lib/content";
+import { getContent } from "@/lib/content";
+import { getDefaultContent } from "@/app/data/dataContent";
 
 export default function RiwayatPesananPage() {
   const [list, setList] = useState<Transaksi[]>([]);

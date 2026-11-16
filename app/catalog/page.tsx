@@ -14,8 +14,10 @@ import PriceTable from "@/components/PriceTable";
 import MiniCarousel from "@/components/MiniCarousel";
 import type { ProductItem } from "@/app/data/dataProduct";
 import { getProduk } from "@/lib/produk";
-import { getKategori, KategoriItem } from "@/lib/kategori";
-import { getContent, getDefaultContent } from "@/lib/content";
+import { getKategori } from "@/lib/kategori";
+import type { KategoriItem } from "@/app/data/dataKategori";
+import { getContent } from "@/lib/content";
+import { getDefaultContent } from "@/app/data/dataContent";
 
 export default function CatalogPage() {
   const [content, setContent] = useState(getDefaultContent());

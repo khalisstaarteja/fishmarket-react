@@ -7,8 +7,8 @@ import InfoCard from './InfoCard';
 type InfoRowProps = {
   title: string;
   text: string;
-  media: React.ReactNode;      // bebas isinya
-  children?: React.ReactNode;  // tambahan di atas info (opsional)
+  media: React.ReactNode; // bebas isinya
+  children?: React.ReactNode; // tambahan di atas info (opsional)
   reverse?: boolean;
 };
 

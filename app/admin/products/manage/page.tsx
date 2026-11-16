@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import { Card, Table, Button } from "react-bootstrap";
 import { getProduk, deleteProduk, resetProduk } from "@/lib/produk";
 import Modal from "@/components/Modal";
-import { open } from "node:inspector/promises";
 
 export default function ManageProducts() {
   const [products, setProducts] = useState<any[]>([]);

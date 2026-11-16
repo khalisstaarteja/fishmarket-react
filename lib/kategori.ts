@@ -1,18 +1,11 @@
 import { getProduk, saveProduk } from "@/lib/produk";
 import { renameKategoriTransaksi } from "@/lib/pesanan";
-
-export type KategoriItem = {
-  id: number;
-  nama: string;
-};
+import { DEFAULT_KATEGORI, KategoriItem } from "@/app/data/dataKategori";
+export type { KategoriItem };
+export { DEFAULT_KATEGORI };
 
 // KEY KATEGORI
 const KEY_KATEGORI = "categories_data";
-
-export const DEFAULT_KATEGORI: KategoriItem[] = [
-  { id: 1, nama: "Ikan Air Asin" },
-  { id: 2, nama: "Ikan Air Tawar" },
-];
 
 // Ambil kategori
 export function getKategori(): KategoriItem[] {

@@ -6,7 +6,8 @@ import { Card, Form, Row, Col } from "react-bootstrap";
 import Button from "@/components/Button";
 import Modal from "@/components/Modal";
 import { getProduk, saveProduk } from "@/lib/produk";
-import { getKategori, KategoriItem } from "@/lib/kategori";
+import { getKategori } from "@/lib/kategori";
+import type { KategoriItem } from "@/app/data/dataKategori";
 
 export default function AddProduct() {
   const router = useRouter();

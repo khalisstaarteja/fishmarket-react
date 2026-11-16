@@ -42,8 +42,8 @@ export default function HomePage() {
       />
       <div className="container container-home" id="content">
         <Title
-          title="ㆍ Temukan Ikan Terbaik ㆍ"
-          sub="Hasil tangkapan segar dari nelayan setempat, langsung ke meja Anda."
+          title={content.homeTitle2}
+          sub={content.homeSub2}
         ></Title>
         <Container className="pt-0 pb-5">
           <Row className="align-items-center g-5">

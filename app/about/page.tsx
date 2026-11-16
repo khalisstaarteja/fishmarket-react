@@ -9,7 +9,8 @@ import InfoCard from "@/components/InfoCard";
 import Stars from "@/components/Stars";
 import Container from "react-bootstrap/Container";
 import reviews from "@/app/data/dataReviews";
-import { getContent, getDefaultContent } from "@/lib/content";
+import { getContent } from "@/lib/content";
+import { getDefaultContent } from "@/app/data/dataContent";
 
 export default function AboutPage() {
   const [content, setContent] = useState(getDefaultContent());

@@ -2,7 +2,8 @@
 import { Fragment, useEffect, useState } from "react";
 import { ProductItem, PENYAJIAN } from "@/app/data/dataProduct";
 import { getProduk } from "@/lib/produk";
-import { getKategori, KategoriItem } from "@/lib/kategori";
+import { getKategori } from "@/lib/kategori";
+import type { KategoriItem } from "@/app/data/dataKategori";
 
 type Props = {
   kategori?: string;

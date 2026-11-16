@@ -148,11 +148,21 @@ export default function AdminContentPage() {
                 />
               </Form.Group>
               <Form.Group className="mb-3">
-                <Form.Label className="fw-bold">Judul Section (H2)</Form.Label>
+                <Form.Label className="fw-bold">Judul Sub-Section Beranda</Form.Label>
                 <Form.Control
                   type="text"
-                  name="homeH2"
-                  value={content.homeH2}
+                  name="homeTitle2"
+                  value={content.homeTitle2}
+                  onChange={handleChange}
+                  required
+                />
+              </Form.Group>
+              <Form.Group className="mb-3">
+                <Form.Label className="fw-bold">Sub-Judul Slogan Beranda</Form.Label>
+                <Form.Control
+                  type="text"
+                  name="homeSub2"
+                  value={content.homeSub2}
                   onChange={handleChange}
                   required
                 />
@@ -297,6 +307,31 @@ export default function AdminContentPage() {
                   rows={3}
                   name="aboutSejakText"
                   value={content.aboutSejakText}
+                  onChange={handleChange}
+                  required
+                />
+              </Form.Group>
+              <Form.Group className="mb-4">
+                <Form.Label className="fw-bold">
+                  Judul Section Lokasi
+                </Form.Label>
+                <Form.Control
+                  type="text"
+                  name="aboutLokasiTitle"
+                  value={content.aboutLokasiTitle}
+                  onChange={handleChange}
+                  required
+                />
+              </Form.Group>
+              <Form.Group className="mb-4">
+                <Form.Label className="fw-bold">
+                  Teks Deskripsi Lokasi
+                </Form.Label>
+                <Form.Control
+                  as="textarea"
+                  rows={3}
+                  name="aboutLokasiText"
+                  value={content.aboutLokasiText}
                   onChange={handleChange}
                   required
                 />

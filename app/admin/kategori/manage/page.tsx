@@ -9,8 +9,8 @@ import {
   addKategori,
   updateKategori,
   deleteKategori,
-  KategoriItem,
 } from "@/lib/kategori";
+import type { KategoriItem } from "@/app/data/dataKategori";
 
 export default function ManageCategoriesPage() {
   const [categories, setCategories] = useState<KategoriItem[]>([]);

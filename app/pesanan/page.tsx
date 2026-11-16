@@ -12,7 +12,8 @@ import Modal from "@/components/Modal";
 import Title from "@/components/Title";
 import Button from "@/components/Button";
 import { getCurrentUser } from "@/lib/auth";
-import { getContent, getDefaultContent } from "@/lib/content";
+import { getContent } from "@/lib/content";
+import { getDefaultContent } from "@/app/data/dataContent";
 import {
   getPesanan,
   deletePesanan,
