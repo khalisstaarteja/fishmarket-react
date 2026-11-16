@@ -141,7 +141,7 @@ a {
   font-family: HYWenHei;
 }
 
-.button.primary, .primary {
+.primary {
   margin-top: 8px !important;
   background: linear-gradient(to left, rgb(30, 47, 103), rgb(9, 15, 32)) !important;
   padding: 10px !important;

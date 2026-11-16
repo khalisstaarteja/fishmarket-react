@@ -85,7 +85,9 @@ export default function AdminDashboard() {
     setTransaksiList(tList);
     setTotalOrder(tList.length);
 
-    const omset = tList.reduce((sum, t) => sum + (t.total || 0), 0);
+    const omset = tList
+    .filter((t) => t.status === "Selesai")
+    .reduce((sum, t) => sum + (t.total || 0), 0);
     setTotalOmset(omset);
   };
 
