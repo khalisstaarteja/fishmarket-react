@@ -454,7 +454,7 @@ export default function AdminContentPage() {
                 />
               </Form.Group>
               <h5 className="text-primary fw-bold mb-3 border-bottom pb-2 pt-2">
-                Bagian Riwayat Pemesanan
+                Bagian Galeri
               </h5>
               <Form.Group className="mb-3">
                 <Form.Label className="fw-bold">
