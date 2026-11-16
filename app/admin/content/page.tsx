@@ -100,7 +100,7 @@ export default function AdminContentPage() {
               <h4 className="fw-bold text-dark mb-0">
                 <i className="fa-solid fa-pen-to-square me-2"></i>{" "}
                 <span className="roman">
-                  Edit Konten Beranda & Tentang Kami
+                  Edit Konten
                 </span>
               </h4>
               <button
